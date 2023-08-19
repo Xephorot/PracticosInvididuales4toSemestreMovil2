@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/horsesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/startRaceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Carrera" />
+        <Button
+            android:id="@+id/stopRaceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parar Carrera" />
+
+        <EditText
+            android:id="@+id/horseNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Caballo"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/stopSingleHorseByNumberButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detener Caballo" />
+        <EditText
+            android:id="@+id/horseNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Caballo"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/stopSingleHorseByNameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detener Caballo por Nombre" />
+        <Button
+            android:id="@+id/resetRaceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar Carrera" />
+    </LinearLayout>
+</ScrollView>
