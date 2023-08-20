@@ -71,13 +71,15 @@ public class RaceFunctions {
 
             if (inputText.isEmpty()) {
                 numberOfHorses = 2;
-            } else {
+            }
+            else {
                 numberOfHorses = Integer.parseInt(inputText);
             }
-
             // Asegura que el número mínimo de caballos sea 2
             if (numberOfHorses < 2) {
                 numberOfHorses = 2;
+            } else if (numberOfHorses > 10) {
+                numberOfHorses = 10;
             }
 
             activity.horses = new Horse[numberOfHorses];
